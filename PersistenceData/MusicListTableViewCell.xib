@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell_id" rowHeight="214" id="KGk-i7-Jjw" customClass="MusicListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="214"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="362" height="213"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Qx-5k-4c4">
+                        <rect key="frame" x="10" y="10" width="193" height="193"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="7Qx-5k-4c4" secondAttribute="height" id="158-Kr-cxb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车站" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdb-T1-qOQ">
+                        <rect key="frame" x="213" y="10" width="139" height="33"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张磊" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeB-uf-403">
+                        <rect key="frame" x="213" y="182" width="139" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ih4-2g-LQ3">
+                        <rect key="frame" x="51" y="154" width="46" height="30"/>
+                        <animations/>
+                        <state key="normal" title="Button"/>
+                    </button>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="7Qx-5k-4c4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="2l2-pr-BKd"/>
+                    <constraint firstAttribute="bottom" secondItem="7Qx-5k-4c4" secondAttribute="bottom" constant="10" id="CHU-Wl-Aep"/>
+                    <constraint firstItem="7Qx-5k-4c4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Efp-HA-Snm"/>
+                    <constraint firstAttribute="trailing" secondItem="Bdb-T1-qOQ" secondAttribute="trailing" constant="10" id="ITY-WV-aJL"/>
+                    <constraint firstAttribute="bottom" secondItem="FeB-uf-403" secondAttribute="bottom" constant="10" id="QqO-hL-j6Z"/>
+                    <constraint firstItem="FeB-uf-403" firstAttribute="leading" secondItem="7Qx-5k-4c4" secondAttribute="trailing" constant="10" id="WqD-1T-wGQ"/>
+                    <constraint firstItem="Bdb-T1-qOQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="agl-fR-Hrv"/>
+                    <constraint firstAttribute="trailing" secondItem="FeB-uf-403" secondAttribute="trailing" constant="10" id="f3U-14-Sew"/>
+                    <constraint firstItem="Bdb-T1-qOQ" firstAttribute="leading" secondItem="7Qx-5k-4c4" secondAttribute="trailing" constant="10" id="xOh-pN-uCu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="name" destination="Bdb-T1-qOQ" id="CXA-tr-7AO"/>
+                <outlet property="picImageView" destination="7Qx-5k-4c4" id="pHd-Ym-5T9"/>
+                <outlet property="singer" destination="FeB-uf-403" id="9lV-78-5vU"/>
+            </connections>
+            <point key="canvasLocation" x="374" y="305"/>
+        </tableViewCell>
+    </objects>
+</document>
